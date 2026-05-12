@@ -13,7 +13,6 @@ function Cartpage({ cartItems, setcartItems }) {
   return (
     <div className="bg-slate-100 min-h-screen py-16 px-6">
       <div className="max-w-7xl mx-auto">
-
         {/* HEADER */}
         <div className="flex justify-between items-center flex-wrap gap-4 mb-12">
           <div>
@@ -28,9 +27,7 @@ function Cartpage({ cartItems, setcartItems }) {
 
           <div className="bg-white px-6 py-4 rounded-2xl shadow-sm border border-slate-200">
             <p className="text-slate-500 text-sm">Total Items</p>
-            <h2 className="text-3xl font-black mt-1">
-              {cartItems.length}
-            </h2>
+            <h2 className="text-3xl font-black mt-1">{cartItems.length}</h2>
           </div>
         </div>
 
@@ -44,7 +41,8 @@ function Cartpage({ cartItems, setcartItems }) {
             </h2>
 
             <p className="text-slate-500 text-lg mt-5 leading-8 max-w-xl mx-auto">
-              Looks like you have not added any products to your shopping cart yet.
+              Looks like you have not added any products to your shopping cart
+              yet.
             </p>
           </div>
         )}
@@ -52,16 +50,13 @@ function Cartpage({ cartItems, setcartItems }) {
         {/* CART ITEMS */}
         {cartItems.length > 0 && (
           <div className="grid lg:grid-cols-3 gap-10">
-
             {/* LEFT */}
             <div className="lg:col-span-2 space-y-6">
-
               {cartItems.map((item) => (
                 <div
                   key={item.id}
                   className="bg-white rounded-[35px] p-6 shadow-sm border border-slate-200 flex flex-col md:flex-row gap-6 items-center"
                 >
-
                   {/* IMAGE */}
                   <div className="bg-slate-100 rounded-3xl p-6 w-full md:w-[220px] h-[220px] flex items-center justify-center">
                     <img
@@ -106,7 +101,6 @@ function Cartpage({ cartItems, setcartItems }) {
             {/* RIGHT */}
             <div>
               <div className="bg-white rounded-[35px] p-8 shadow-sm border border-slate-200 sticky top-10">
-
                 <h2 className="text-3xl font-black text-slate-900 mb-8">
                   Order Summary
                 </h2>

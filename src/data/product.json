@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15 Pro",
+    "price": 1199,
+    "picture": "https://images.unsplash.com/photo-1695048133142-1a20484d2569"
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S24",
+    "price": 999,
+    "picture": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf"
+  },
+  {
+    "id": 3,
+    "name": "MacBook Pro M3",
+    "price": 2199,
+    "picture": "https://www.notebookcheck.net/fileadmin/Notebooks/Apple/MacBook_Pro_14_2023_M3_Max/IMG_1008.JPG"
+  },
+  {
+    "id": 4,
+    "name": "Dell XPS 15",
+    "price": 1799,
+    "picture": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+  },
+  {
+    "id": 5,
+    "name": "Sony WH-1000XM5",
+    "price": 399,
+    "picture": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+  },
+  {
+    "id": 6,
+    "name": "Apple Watch Series 9",
+    "price": 499,
+    "picture": "https://images.unsplash.com/photo-1510017803434-a899398421b3"
+  },
+  {
+    "id": 7,
+    "name": "iPad Air",
+    "price": 699,
+    "picture": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0"
+  },
+  {
+    "id": 8,
+    "name": "Logitech MX Master 3S",
+    "price": 99,
+    "picture": "https://images.unsplash.com/photo-1527814050087-3793815479db"
+  },
+  {
+    "id": 9,
+    "name": "Razer BlackWidow V4",
+    "price": 189,
+    "picture": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae"
+  },
+  {
+    "id": 10,
+    "name": "Canon EOS R6",
+    "price": 2499,
+    "picture": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32"
+  },
+  {
+    "id": 11,
+    "name": "GoPro Hero 12",
+    "price": 499,
+    "picture": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"
+  },
+  {
+    "id": 12,
+    "name": "PlayStation 5",
+    "price": 599,
+    "picture": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db"
+  },
+  {
+    "id": 13,
+    "name": "Xbox Series X",
+    "price": 549,
+    "picture": "https://images.unsplash.com/photo-1621259182978-fbf93132d53d"
+  },
+  {
+    "id": 14,
+    "name": "Nintendo Switch OLED",
+    "price": 349,
+    "picture": "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e"
+  },
+  {
+    "id": 15,
+    "name": "DJI Mini 4 Pro",
+    "price": 899,
+    "picture": "https://images.unsplash.com/photo-1473968512647-3e447244af8f"
+  },
+  {
+    "id": 16,
+    "name": "Samsung Odyssey G9",
+    "price": 1299,
+    "picture": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf"
+  },
+  {
+    "id": 17,
+    "name": "Anker Power Bank",
+    "price": 59,
+    "picture": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0"
+  },
+  {
+    "id": 18,
+    "name": "Meta Quest 3",
+    "price": 649,
+    "picture": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac"
+  },
+  {
+    "id": 19,
+    "name": "Kindle Paperwhite",
+    "price": 179,
+    "picture": "https://images.unsplash.com/photo-1512820790803-83ca734da794"
+  },
+  {
+    "id": 20,
+    "name": "TP-Link WiFi 6 Router",
+    "price": 149,
+    "picture": "https://images.unsplash.com/photo-1647427060118-4911c9821b82"
+  }
+]

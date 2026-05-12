@@ -20,10 +20,10 @@ function App() {
   return (
     <Router>
       <Navbar
-         search={search}
-  setsearch={setsearch}
-  cartCount={cartItems.length}
-  wishlistCount={wishlistItems.length}
+        search={search}
+        setsearch={setsearch}
+        cartCount={cartItems.length}
+        wishlistCount={wishlistItems.length}
       />
 
       <Routes>

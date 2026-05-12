@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function Homepage() {
   const products = [
@@ -124,7 +124,6 @@ function Homepage() {
         </div>
       </section>
 
-      
       <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="bg-white rounded-[40px] p-10 border border-slate-200 shadow-sm">
           <p className="text-center text-slate-500 uppercase tracking-[4px] font-semibold mb-10">
@@ -206,4 +205,4 @@ function Homepage() {
     </div>
   );
 }
-export default Homepage
+export default Homepage;

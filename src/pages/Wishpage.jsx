@@ -1,7 +1,6 @@
 import React from "react";
 
 function Wishlistpage({ wishlistItems, setwishlistItems }) {
-
   const removeWishlist = (id) => {
     const updatedItems = wishlistItems.filter((item) => item.id !== id);
     setwishlistItems(updatedItems);
@@ -10,7 +9,6 @@ function Wishlistpage({ wishlistItems, setwishlistItems }) {
   return (
     <div className="bg-slate-100 min-h-screen py-16 px-6">
       <div className="max-w-7xl mx-auto">
-
         {/* HEADER */}
         <div className="flex justify-between items-center flex-wrap gap-4 mb-12">
           <div>
@@ -18,16 +16,12 @@ function Wishlistpage({ wishlistItems, setwishlistItems }) {
               Wishlist Collection
             </p>
 
-            <h1 className="text-5xl font-black text-slate-900">
-              My Wishlist
-            </h1>
+            <h1 className="text-5xl font-black text-slate-900">My Wishlist</h1>
           </div>
 
           <div className="bg-white px-6 py-4 rounded-2xl shadow-sm border border-slate-200">
             <p className="text-slate-500 text-sm">Saved Products</p>
-            <h2 className="text-3xl font-black mt-1">
-              {wishlistItems.length}
-            </h2>
+            <h2 className="text-3xl font-black mt-1">{wishlistItems.length}</h2>
           </div>
         </div>
 
@@ -41,7 +35,8 @@ function Wishlistpage({ wishlistItems, setwishlistItems }) {
             </h2>
 
             <p className="text-slate-500 text-lg mt-5 leading-8 max-w-xl mx-auto">
-              Save your favorite products here so you can easily find them later.
+              Save your favorite products here so you can easily find them
+              later.
             </p>
           </div>
         )}
@@ -49,16 +44,13 @@ function Wishlistpage({ wishlistItems, setwishlistItems }) {
         {/* PRODUCTS */}
         {wishlistItems.length > 0 && (
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
             {wishlistItems.map((item) => (
               <div
                 key={item.id}
                 className="bg-white rounded-[35px] overflow-hidden shadow-sm border border-slate-200 hover:shadow-2xl transition-all duration-300 group"
               >
-
                 {/* IMAGE */}
                 <div className="bg-slate-100 overflow-hidden p-8 h-[320px] flex items-center justify-center relative">
-
                   <button
                     onClick={() => removeWishlist(item.id)}
                     className="absolute top-5 right-5 bg-red-500 hover:bg-red-600 text-white w-10 h-10 rounded-full text-lg transition-all z-10"
@@ -84,7 +76,8 @@ function Wishlistpage({ wishlistItems, setwishlistItems }) {
                   </h2>
 
                   <p className="text-slate-500 mt-5 leading-7">
-                    Premium technology product with modern performance and elegant design.
+                    Premium technology product with modern performance and
+                    elegant design.
                   </p>
 
                   <div className="flex justify-between items-center mt-8 flex-wrap gap-4">

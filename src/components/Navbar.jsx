@@ -2,12 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 
-function Navbar({
-  search,
-  setsearch,
-  cartCount,
-  wishlistCount,
-}) {
+function Navbar({ search, setsearch, cartCount, wishlistCount }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const lastFocusedElementRef = useRef(null);
@@ -52,9 +47,9 @@ function Navbar({
       className="flex py-2 px-4 md:px-8 bg-white border-b border-slate-300 min-h-[68px] relative z-20"
       aria-label="Main navigation"
     >
-      
       <div className="max-w-7xl mx-auto flex flex-wrap items-center gap-4 w-full">
-        <Link to="/"
+        <Link
+          to="/"
           className="inline-block min-w-9 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
         >
           <span className="sr-only">Your Company</span>
@@ -136,7 +131,6 @@ function Navbar({
         </div>
         {location.pathname === "/product" && (
           <div className="flex-1 flex justify-center px-5">
-
             <input
               type="text"
               value={search}
@@ -146,12 +140,12 @@ function Navbar({
               }}
               className="bg-white p-3 border border-slate-300 shadow-sm w-full max-w-xl rounded-xl outline-none"
             />
-
           </div>
         )}
         <div className="flex items-center gap-4 ml-auto">
           <div className="flex items-center gap-4 pr-2">
-            <Link to="/Wishlist"
+            <Link
+              to="/Wishlist"
               className="flex flex-col items-center justify-center gap-0.5 text-[13px] font-semibold text-slate-900 hover:text-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
             >
               <div className="relative">
@@ -172,8 +166,10 @@ function Navbar({
               </div>
             </Link>
 
-            <Link to={"/Cart"} className="flex flex-col items-center justify-center gap-0.5 text-[13px] font-semibold text-slate-900 hover:text-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
-              
+            <Link
+              to={"/Cart"}
+              className="flex flex-col items-center justify-center gap-0.5 text-[13px] font-semibold text-slate-900 hover:text-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
+            >
               <div className="relative">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -190,7 +186,7 @@ function Navbar({
                   {cartCount}
                 </span>
               </div>
-          </Link>
+            </Link>
           </div>
 
           <a

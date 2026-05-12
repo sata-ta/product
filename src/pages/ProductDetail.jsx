@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import productsData from "../data/product.json";
 
 function ProductDetail({
   cartItems,
@@ -12,14 +13,9 @@ function ProductDetail({
   const [product, setproduct] = useState(null);
 
   useEffect(() => {
-    const FetchAPI = async () => {
-      const req = await fetch(`http://localhost:3000/products/${id}`);
-      const res = await req.json();
+    const foundProduct = productsData.find((item) => item.id === Number(id));
 
-      setproduct(res);
-    };
-
-    FetchAPI();
+    setproduct(foundProduct);
   }, [id]);
 
   if (!product) {

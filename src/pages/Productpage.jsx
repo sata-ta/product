@@ -1,21 +1,12 @@
-// Productpage.jsx
-
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import productsData from "../data/product.json";
 
 function Productpage({ search }) {
   const [product, setproduct] = useState([]);
 
   useEffect(() => {
-    const FetchAPi = async () => {
-      const req = await fetch("http://localhost:3000/products");
-
-      const res = await req.json();
-
-      setproduct(res);
-    };
-
-    FetchAPi();
+    setproduct(productsData);
   }, []);
 
   const search_product = product.filter((item) => {

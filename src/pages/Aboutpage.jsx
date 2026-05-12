@@ -138,9 +138,7 @@ function Aboutpage() {
             Our Team
           </p>
 
-          <h2 className="text-5xl font-black">
-            Meet The Creative Team
-          </h2>
+          <h2 className="text-5xl font-black">Meet The Creative Team</h2>
 
           <p className="text-slate-600 text-lg leading-8 mt-6">
             Our talented team works together to deliver amazing digital
